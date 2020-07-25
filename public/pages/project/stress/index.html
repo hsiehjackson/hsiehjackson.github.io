@@ -1,0 +1,137 @@
+	<!DOCTYPE html>
+	<html lang="zxx" class="no-js">
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129902521-1"></script>
+		<script>
+  		  window.dataLayer = window.dataLayer || [];
+  		  function gtag(){dataLayer.push(arguments);}
+ 		  gtag('js', new Date());
+ 		  gtag('config', 'UA-129902521-1');
+		</script>
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" type="image/png" href="/public/img/favicon.png">
+		<!-- Author Meta -->
+		<meta name="author" content="colorlib">
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		<title>Stress Detection</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+			<!--
+			CSS
+			============================================= -->
+			<link rel="stylesheet" href="/public/css/linearicons.css">
+			<link rel="stylesheet" href="/public/css/owl.carousel.css">
+			<link rel="stylesheet" href="/public/css/font-awesome.min.css">
+			<link rel="stylesheet" href="/public/css/nice-select.css">			
+			<link rel="stylesheet" href="/public/css/magnific-popup.css">
+			<link rel="stylesheet" href="/public/css/bootstrap.css">
+			<link rel="stylesheet" href="/public/css/main.css">
+			<link rel="stylesheet" href="/public/share/navbar/myNavbar.css">
+		</head>
+		<body>
+			<div class="protfolio-wrap">
+
+			<!-- Start Header Area -->
+			<header class="default-header">
+				<nav id="myNavbar" class="navbar navbar-expand-lg  navbar-light"></nav>
+			</header>
+		
+			<!-- About Generic Start -->
+			<div class="main-wrapper">
+				<!-- Start Generic Area -->
+				<section class="about-generic-area section-gap">
+					<div class="container border-top-generic">
+						<div class="col-md-10 center justify-content-md-center">
+							<h3 style="text-align: center;"class="about-title mb-30">Feature Selection Framework for XGBoost Based
+								on <br>Electrodermal Activity in Stress Detection</h3>
+							<h5 class="mb-30">Publication - <a class="highlight-a" href="http://sips2019.org/">IEEE SiPS 2019</a></h5>
+							<p class="mb-30"><b>Cheng-Ping Hsieh</b>, Yi-Ta Chen, Win-Ken Beh, and An-Yeu (Andy) Wu</p>
+						</div>
+						<div class="row justify-content-md-center">
+							<div class="col-md-10">
+								<div class="img-text center">
+									<img style='width: 70%;' src="/public/pages/project/stress/img/EDA.png" alt="result" class="img-fluid mb-20">
+									<p style="text-align: center">Figure 1. Electrodermal activity in stress detection experiments on WESAD dataset.</p>
+								</div>
+							</div>
+						</div>
+						<div class="row justify-content-md-center">
+							<div class="col-lg-10">
+								<p>Since stress has a strong influence on human’s health, 
+									it is necessary to automatically detect stress in our daily life. 
+									In this paper, we aim to improve performance and obtain dominant 
+									features in stress detection based on Electrodermal Activity (EDA) of chest 
+									and wrist which are shown above on Figure 1. Compared to methods 
+									in Wearable Stress and Affect Dataset (WESAD), we propose several 
+									enhancements to get higher f1-scores, including less overlapped signal 
+									segmentation, more signal processing features, and extreme gradient boosting 
+									classification algorithm (XGBoost) which are listed below on Figure 2.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-md-center">
+							<div class="col-md-10">
+								<div class="img-text center">
+									<img style='width: 50%;' src="/public/pages/project/stress/img/Overall.png" alt="" class="img-fluid mb-20">
+									<p style="text-align: center">Figure 2. Overall view of the processing flow. Red text are several modifications and methods we proposed</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-md-center">
+							<div class="col-lg-10">
+								<p>Furthermore, we select dominant features according to their
+									importance in classifier and correlation among other features
+									while keeping high performance. Experiment results show that
+									with 9 dominant features in XGBoost, we can achieve 92.38%
+									(+17.87%) and 89.92% (+14.58%) f1-scores compared to WESAD
+									on chest- and wrist-based EDA signal respectively. The features
+									we choose can viewed as a nine-dimensional vector and we projected all data segments 
+									on a two dimensional space by t-SNE, which we can distinguish
+									the data distribution easily, as shown below in Figure 3. For more information, 
+									please refer to our paper and our code is also publically available on GitHub.</p>
+							</div>
+						</div>
+						<div class="row justify-content-md-center">
+							<div class="col-md-10">
+								<div class="img-text center">
+									<img style='width: 50%;' src="/public/pages/project/stress/img/tSNE.jpg" alt="result" class="img-fluid mb-20">
+									<p style="text-align: center">Figure 3. t-SNE visualization for dominant features based on EDA signal.</p>
+								</div>
+							</div>
+						</div>
+						<div class="row justify-content-md-center text-center">
+							<div class="col-md-2">
+								<a style="text-align: center" href="https://github.com/hsiehjackson/WESAD_GSR" class="genric-btn primary-border radius">GitHub</a>
+							</div>
+							<div class="col-md-2">
+								<a style="text-align: center" href="https://ieeexplore.ieee.org/document/9020321" class="genric-btn primary-border radius">IEEE</a>
+							</div>
+							<div class="col-md-2">
+								<a style="text-align: center" href="/public/pages/project/stress/pdf/2019_SiPS.pdf" class="genric-btn primary-border radius">PDF</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- End Generic Start -->		
+				<!-- start footer Area -->		
+				<footer id="myFooter" class="footer-area section-gap"></footer>	
+				<!-- End footer Area -->	
+			</div>
+			<!-- Script for navbar -->
+			<script src="/public/js/vendor/jquery-2.2.4.min.js"></script>
+			<script src="/public/js/vendor/bootstrap.min.js"></script>	
+			<!-- My Own Script-->
+			<script src="/public/share/navbar/myNavbar.js"></script>
+			<script src="/public/share/footer/myFooter.js"></script>
+		</body>
+	</html>

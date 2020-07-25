@@ -1,0 +1,125 @@
+	<!DOCTYPE html>
+	<html lang="zxx" class="no-js">
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129902521-1"></script>
+		<script>
+  		  window.dataLayer = window.dataLayer || [];
+  		  function gtag(){dataLayer.push(arguments);}
+ 		  gtag('js', new Date());
+ 		  gtag('config', 'UA-129902521-1');
+		</script>
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" type="image/png" href="/public/img/favicon.png">
+		<!-- Author Meta -->
+		<meta name="author" content="colorlib">
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		<title>FRAIG</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+			<!--
+			CSS
+			============================================= -->
+			<link rel="stylesheet" href="/public/css/linearicons.css">
+			<link rel="stylesheet" href="/public/css/owl.carousel.css">
+			<link rel="stylesheet" href="/public/css/font-awesome.min.css">
+			<link rel="stylesheet" href="/public/css/nice-select.css">			
+			<link rel="stylesheet" href="/public/css/magnific-popup.css">
+			<link rel="stylesheet" href="/public/css/bootstrap.css">
+			<link rel="stylesheet" href="/public/css/main.css">
+			<link rel="stylesheet" href="/public/share/navbar/myNavbar.css">
+		</head>
+		<body>
+			<div class="protfolio-wrap">
+
+			<!-- Start Header Area -->
+			<header class="default-header">
+				<nav id="myNavbar" class="navbar navbar-expand-lg  navbar-light"></nav>
+			</header>
+		
+			<!-- About Generic Start -->
+			<div class="main-wrapper">
+				<!-- Start Generic Area -->
+				<section class="about-generic-area section-gap">
+					<div class="container border-top-generic">
+						<div class="col-md-10 center justify-content-md-center">
+							<h3 class="about-title mb-30">Functionally Reduced And-Inverter Graph (FRAIG)</h3>
+							<h5 class="mb-30">Personal Project @ EE3011 Data Structure and Programming</h5>
+							<p class="mb-30">Implemente a special circuit representation with simplification.</p>
+						</div>
+						<div class="row justify-content-md-center">
+							<div class="col-md-10">
+								<div class="img-text center">
+									<img style='width: 30%;' src="/public/pages/project/fraig/img/prize.jpg" alt="result" class="img-fluid mb-20">
+									<p style="text-align: center">Figure 1. 9th place out of 170+ students in DSnP final project.</p>
+								</div>
+							</div>
+						</div>
+						<div class="row justify-content-md-center">
+							<div class="col-lg-10">
+								<p>In this final project, we are going to implement a special circuit representation,
+								  FRAIG, from a circuit description file and we need to implement circuit simplification techniques to reduce the whole circuit architecture. This project is sponsored by Cadence Design Systems and I got the 9th place out of 170+ students, as shown above on Figure 1.
+								</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-md-center">
+							<div class="col-md-10">
+								<div class="img-text center">
+									<img style='width: 70%;' src="/public/pages/project/fraig/img/flow.png" alt="" class="img-fluid mb-20">
+									<p style="text-align: center">Figure 2. Processing flow overview.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-md-center">
+							<div class="col-lg-10">
+								<p>The program performs the following processes to simplfy the circuits as shown above on Figure 2.</p>
+								<ul class="mb-20">
+									<li>Read：Parse a description file in the AIGER format and sweep out the gates that cannot be reached from primary outputs.</li>
+									<li>Optimize：Perform optimizations without altering the functionality, replacing an always-inverse fan-ins AND gate by zero.</li>
+									<li>Strash：Use structural hash to merge the structurally equivalent signals by comparing gate types and permuting inputs.</li>
+									<li>Sim：Simulate boolean logic to group potentially equivalent gates into functionally equivalent candidate (FEC) pair.</li>
+									<li>Fraig：Use a boolean satisfiability (SAT) solver to formally prove or disprove FEC pair and merge equivalent gates.</li>
+								</ul>
+								<p>For more information, please refer to our report and our code is also publically available on GitHub.</p>
+							</div>
+						</div>
+
+
+						<div class="row justify-content-md-center">
+							<div class="col-lg-10">
+								
+							</div>
+						</div>
+						<div class="row justify-content-md-center text-center">
+							<div class="col-md-2">
+								<a style="text-align: center" href="https://github.com/hsiehjackson/2017-DSnP/tree/master/fraig" class="genric-btn primary-border radius">GitHub</a>
+							</div>
+							<div class="col-md-2">
+								<a style="text-align: center" href="/public/pages/project/fraig/pdf/report.pdf" class="genric-btn primary-border radius">Report</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- End Generic Start -->		
+				<!-- start footer Area -->		
+				<footer id="myFooter" class="footer-area section-gap"></footer>	
+				<!-- End footer Area -->	
+			</div>
+			<!-- Script for navbar -->
+			<script src="/public/js/vendor/jquery-2.2.4.min.js"></script>
+			<script src="/public/js/vendor/bootstrap.min.js"></script>	
+			<!-- My Own Script-->
+			<script src="/public/share/navbar/myNavbar.js"></script>
+			<script src="/public/share/footer/myFooter.js"></script>
+		</body>
+	</html>

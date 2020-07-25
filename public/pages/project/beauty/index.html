@@ -1,0 +1,109 @@
+	<!DOCTYPE html>
+	<html lang="zxx" class="no-js">
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129902521-1"></script>
+		<script>
+  		  window.dataLayer = window.dataLayer || [];
+  		  function gtag(){dataLayer.push(arguments);}
+ 		  gtag('js', new Date());
+ 		  gtag('config', 'UA-129902521-1');
+		</script>
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" type="image/png" href="/public/img/favicon.png">
+		<!-- Author Meta -->
+		<meta name="author" content="colorlib">
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		<title>Facial Beauty Prediction</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+			<!--
+			CSS
+			============================================= -->
+			<link rel="stylesheet" href="/public/css/linearicons.css">
+			<link rel="stylesheet" href="/public/css/owl.carousel.css">
+			<link rel="stylesheet" href="/public/css/font-awesome.min.css">
+			<link rel="stylesheet" href="/public/css/nice-select.css">			
+			<link rel="stylesheet" href="/public/css/magnific-popup.css">
+			<link rel="stylesheet" href="/public/css/bootstrap.css">
+			<link rel="stylesheet" href="/public/css/main.css">
+			<link rel="stylesheet" href="/public/share/navbar/myNavbar.css">
+		</head>
+		<body>
+			<div class="protfolio-wrap">
+
+			<!-- Start Header Area -->
+			<header class="default-header">
+				<nav id="myNavbar" class="navbar navbar-expand-lg  navbar-light"></nav>
+			</header>
+		
+			<!-- About Generic Start -->
+			<div class="main-wrapper">
+				<!-- Start Generic Area -->
+				<section class="about-generic-area section-gap">
+					<div class="container border-top-generic">
+						<div class="col-md-10 center justify-content-md-center">
+							<h3 class="about-title mb-30">Facial Beauty Prediction</h3>
+							<h5 class="mb-30">Personal Project @ CSIE 5420 Cognitive Computing</h5>
+							<p class="mb-30">A framework to realtime evaluate facial beauty.</p>
+						</div>
+						<div class="row justify-content-md-center">
+							<div class="col-md-10">
+								<div class="img-text center">
+									<img style='width:80%;' src="/public/pages/project/beauty/img/result.png" alt="result" class="img-fluid mb-20">
+									<p style="text-align: center">Figure 1. Evaluated example with different saturation and value (HSV color).</p>
+								</div>
+							</div>
+						</div>
+						<div class="row justify-content-md-center">
+							<div class="col-lg-10">
+								<p>Facial beauty prediction is a significant visual recognition problem to make assessment of facial attractiveness that is consistent to human perception. In this project, I plan to implement a framework to learn the distribution of facial beauty and help machine develop cognition about attractiveness. Moreover, I discuss the effectiveness for future applications regarding different skin colors, lightness, and saturation of images. In this work, the beauty scores are range from 1-5 and my results are shown above in Figure 1.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-md-center">
+							<div class="col-md-10">
+								<div class="img-text center">
+									<img style='width: 70%;' src="/public/pages/project/beauty/img/form.png" alt="" class="img-fluid mb-20">
+									<p style="text-align: center">Figure 2. Comparison of different ImageNet models and different objective functions by 5-fold cross validation.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-md-center">
+							<div class="col-lg-10">
+								<p>As for the proposed method, I used different pre-trained ImageNet models to verify the capabilities. Also, I used different objective functions to deal with the class relationship problem which we cannot view the beauty scores as independent class, including Earth Mover Distance-based loss, Mean Square Error, and Multi-Binary Cross Entropy Loss. I evaluated my results with pearson correlation (PC), maximum absolute error (MAE), and root mean square error (RMSE) which is listed above in Figure 2. For more information, please refer to my slides and my code is also publically available on GitHub.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-md-center text-center">
+							<div class="col-md-2">
+								<a style="text-align: center" href="https://github.com/hsiehjackson/Facial-Beauty-Prediction" class="genric-btn primary-border radius">GitHub</a>
+							</div>
+							<div class="col-md-2">
+								<a style="text-align: center" href="/public/pages/project/beauty/pdf/report.pdf" class="genric-btn primary-border radius">Slides</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- End Generic Start -->		
+				<!-- start footer Area -->		
+				<footer id="myFooter" class="footer-area section-gap"></footer>	
+				<!-- End footer Area -->	
+			</div>
+			<!-- Script for navbar -->
+			<script src="/public/js/vendor/jquery-2.2.4.min.js"></script>
+			<script src="/public/js/vendor/bootstrap.min.js"></script>	
+			<!-- My Own Script-->
+			<script src="/public/share/navbar/myNavbar.js"></script>
+			<script src="/public/share/footer/myFooter.js"></script>
+		</body>
+	</html>

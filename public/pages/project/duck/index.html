@@ -1,0 +1,152 @@
+	<!DOCTYPE html>
+	<html lang="zxx" class="no-js">
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129902521-1"></script>
+		<script>
+  		  window.dataLayer = window.dataLayer || [];
+  		  function gtag(){dataLayer.push(arguments);}
+ 		  gtag('js', new Date());
+ 		  gtag('config', 'UA-129902521-1');
+		</script>
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" type="image/png" href="/public/img/favicon.png">
+		<!-- Author Meta -->
+		<meta name="author" content="colorlib">
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		<title>Duck Hunt</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+			<!--
+			CSS
+			============================================= -->
+			<link rel="stylesheet" href="/public/css/linearicons.css">
+			<link rel="stylesheet" href="/public/css/owl.carousel.css">
+			<link rel="stylesheet" href="/public/css/font-awesome.min.css">
+			<link rel="stylesheet" href="/public/css/nice-select.css">			
+			<link rel="stylesheet" href="/public/css/magnific-popup.css">
+			<link rel="stylesheet" href="/public/css/bootstrap.css">
+			<link rel="stylesheet" href="/public/css/main.css">
+			<link rel="stylesheet" href="/public/share/navbar/myNavbar.css">
+		</head>
+		<body>
+			<div class="protfolio-wrap">
+
+			<!-- Start Header Area -->
+			<header class="default-header">
+				<nav id="myNavbar" class="navbar navbar-expand-lg  navbar-light"></nav>
+			</header>
+		
+			<!-- About Generic Start -->
+			<div class="main-wrapper">
+				<!-- Start Generic Area -->
+				<section class="about-generic-area section-gap">
+					<div class="container border-top-generic">
+						<div class="col-md-10 center justify-content-md-center">
+							<h3 class="about-title mb-30">Duck Hunt</h3>
+							<h5 class="mb-30">Team project @ EE3016 Digital Circuit Lab</h5>
+							<p class="mb-30">Design a shooting game in reality with FPGA board.</p>
+						</div>
+						
+						<div class="row justify-content-md-center mb-20">
+							<div class="col-md-10">
+								<div class="embed-responsive embed-responsive-16by9 mb-20">
+									<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NE5AVcDUJl8" allowfullscreen></iframe>
+								</div>
+								<p style="text-align: center">Figure 1. Demo video with the instruction to play game.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-md-center">
+							<div class="col-lg-10">
+								<p>In 1984, Nintendo published light gun shooter video game "Duck Hunt", 
+									which is a fashion and popular game at that time. In this project, 
+									we aimed to replicate this game on FPGA board and we designed to use a lightgun 
+									to make shooting in reality come true. The game rule is to use your flashlight as a gun and shooting in front of the camera sensor. The player has five lives and they will reduce a life when the duck flying outside the screen. The demo video (in chinese) is shown above on Figure 1. As for our design, the whole architecture is divided into three subtasks which are listed below.
+								</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-md-center">
+							<div class="col-md-10">
+								<div class="img-text center">
+									<img style='width: 80%;' src="/public/pages/project/duck/img/module.png" alt="" class="img-fluid mb-20">
+									<p style="text-align: center">Figure 2. Module Architecture.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-md-center">
+							<div class="col-lg-10">
+								<h5>1. Hardware Device</h5>
+								<p>The device we use including FPGA board, camera, VGA screen, and a flashlight. It is easy to play our game.</p>
+							</div>
+						</div>
+
+						
+						<div class="row justify-content-md-center">
+							<div class="col-lg-10">
+								<h5>2. Camera Detection</h5>
+								<p>First, the camera we use can realtime capture the frames and we use SDRAM to store each frame. Second, we change the RGB color to YUV color so that we can pay more attention on white light. To decide how we move the scope, we carry out two techniques, position detection and motion detection.</p>
+							</div>
+						</div>
+
+						
+						<div class="row justify-content-md-center">
+							<div class="col-lg-10">
+								<h5>3. Game Interface</h5>
+								<p>For the game interface, we compress each image and use register to store every pixel information. After, we design scope controller to setup boundary constraint and shooting judgement. Also, we implement duck controller to decide its random motion. The whole game interfaces are shown below on Figure 3.</p>
+							</div>
+						</div>
+
+
+						<div class="row justify-content-md-center">
+							<div class="col-md-10">
+								<div class="img-text center">
+									<img style='width: 80%;' src="/public/pages/project/duck/img/interface.png" alt="" class="img-fluid mb-20">
+									<p style="text-align: center">Figure 3. Game Interface.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="row justify-content-md-center">
+							<div class="col-lg-10">
+								<p>  
+									For more information,  please refer to our slide or our report. Our code is also publically available on GitHub.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-md-center text-center">
+							<div class="col-md-2">
+								<a style="text-align: center" href="https://github.com/hsiehjackson/2018DCLab/tree/master/final%20project" class="genric-btn primary-border radius">GitHub</a>
+							</div>
+							<div class="col-md-2">
+								<a style="text-align: center" href="/public/pages/project/duck/pdf/report.pdf" class="genric-btn primary-border radius">Report</a>
+							</div>
+							<div class="col-md-2">
+								<a style="text-align: center" href="/public/pages/project/duck/pdf/slide.pdf" class="genric-btn primary-border radius">Slide</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- End Generic Start -->		
+				<!-- start footer Area -->		
+				<footer id="myFooter" class="footer-area section-gap"></footer>	
+				<!-- End footer Area -->	
+			</div>
+			<!-- Script for navbar -->
+			<script src="/public/js/vendor/jquery-2.2.4.min.js"></script>
+			<script src="/public/js/vendor/bootstrap.min.js"></script>	
+			<!-- My Own Script-->
+			<script src="/public/share/navbar/myNavbar.js"></script>
+			<script src="/public/share/footer/myFooter.js"></script>
+		</body>
+	</html>

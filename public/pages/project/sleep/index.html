@@ -1,0 +1,133 @@
+	<!DOCTYPE html>
+	<html lang="zxx" class="no-js">
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129902521-1"></script>
+		<script>
+  		  window.dataLayer = window.dataLayer || [];
+  		  function gtag(){dataLayer.push(arguments);}
+ 		  gtag('js', new Date());
+ 		  gtag('config', 'UA-129902521-1');
+		</script>
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" type="image/png" href="/public/img/favicon.png">
+		<!-- Author Meta -->
+		<meta name="author" content="colorlib">
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		<title>Automatic Sleep Stage Classification</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+			<!--
+			CSS
+			============================================= -->
+			<link rel="stylesheet" href="/public/css/linearicons.css">
+			<link rel="stylesheet" href="/public/css/owl.carousel.css">
+			<link rel="stylesheet" href="/public/css/font-awesome.min.css">
+			<link rel="stylesheet" href="/public/css/nice-select.css">			
+			<link rel="stylesheet" href="/public/css/magnific-popup.css">
+			<link rel="stylesheet" href="/public/css/bootstrap.css">
+			<link rel="stylesheet" href="/public/css/main.css">
+			<link rel="stylesheet" href="/public/share/navbar/myNavbar.css">
+		</head>
+		<body>
+			<div class="protfolio-wrap">
+
+			<!-- Start Header Area -->
+			<header class="default-header">
+				<nav id="myNavbar" class="navbar navbar-expand-lg  navbar-light"></nav>
+			</header>
+		
+			<!-- About Generic Start -->
+			<div class="main-wrapper">
+				<!-- Start Generic Area -->
+				<section class="about-generic-area section-gap">
+					<div class="container border-top-generic">
+						<div class="col-md-10 center justify-content-md-center">
+							<h3 class="about-title mb-30">Automatic Sleep Stage Classification</h3>
+							<h5 class="mb-30">Team Project @ EE4057 Biomedical Engineering Lab</h5>
+							<p class="mb-30">Develop an mobile alarm application to monitor our sleep quality</p>
+						</div>
+						<div class="row justify-content-md-center mb-20">
+							<div class="col-md-10">
+								<div class="embed-responsive embed-responsive-16by9">
+									<video controls>
+										<source src="/public/pages/project/sleep/img/demo.mp4">
+									</video>
+								</div>
+							</div>
+						</div>
+						<div class="row justify-content-md-center">
+							<div class="col-lg-10">
+								<p>Sleep plays a crucial part in our daily life and people concern about their sleep quality nowadays. In this project, we aimed to monitor our electroencephalogram (EEG) signal to determine our sleep stage. After that, we design a mobile alarm application 
+									to wake us up on right time. The whole project is divided into several subtasks, in which the implemented techniques are listed below. Also, the introduction and demo video is shown above on Figure 1.
+								</p>
+							</div>
+						</div>
+
+
+
+						<div class="row justify-content-md-center">
+							<div class="col-lg-10">
+								<h5>1. Data Acquisition and Preprocessing</h5>
+								<p> We use <a href="https://physionet.org/physiobank/database/sleep-edfx/" class="highlight-a">Physionet SleepEDF database</a>, which we only use the subjects without insomnia. After that, we use EDF browser to visualize our EEG signal amplitude and remove the artifacts. Also, we applied filters to smooth the data and normalized to reduce the variance of difference subjects.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-md-center">
+							<div class="col-lg-10">
+								<h5>2. Traditional Learning</h5>
+								<p>First, we implement feature extraction including time, frequency, time-frequency, and entropy analysis. After then, we used XGBoost as our training model, which we can select features by importance and analye their characteristic. In this technique, we got 83.5% accuracy score. </p>
+							</div>
+						</div>
+
+						
+						<div class="row justify-content-md-center">
+							<div class="col-lg-10">
+								<h5>3. Deep Learning</h5>
+								<p>For deep learning technique, we use convolutional neural network (CNN) to solve EEG signal classification problem. While the convolutional layers learn the feature extraction part, the fully connected layer learn the classification part. In this technique, we got 86% accuracy score.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-md-center">
+							<div class="col-lg-10">
+								<h5>4. Application - Alarm Clock</h5>
+								<p>We used mindWave mobile to monitor our EEG signal and transmitted the data to our computer by bluetooth. After that, we inferenced and got our sleep stage in our local computer and upload classification results to Google Cloud Platform. Finally, the application on user's phone will get the results from cloud platform and display on the screen, which the alarm clock will go off at right time.</p>
+							</div>
+						</div>
+
+						<div class="row justify-content-md-center">
+							<div class="col-lg-10">
+								<p>For more information, please refer to our report (in Chinese). Our code is also publically available on GitHub. </p>
+							</div>
+						</div>
+						<div class="row justify-content-md-center text-center">
+							<div class="col-md-2">
+								<a style="text-align: center" href="https://github.com/hsiehjackson/2018-Biomedical-Engineering-Lab/tree/master/ASSC" class="genric-btn primary-border radius">GitHub</a>
+							</div>
+							<div class="col-md-2">
+								<a style="text-align: center" href="/public/pages/project/sleep/pdf/report.pdf" class="genric-btn primary-border radius">Report</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- End Generic Start -->		
+				<!-- start footer Area -->		
+				<footer id="myFooter" class="footer-area section-gap"></footer>	
+				<!-- End footer Area -->	
+			</div>
+			<!-- Script for navbar -->
+			<script src="/public/js/vendor/jquery-2.2.4.min.js"></script>
+			<script src="/public/js/vendor/bootstrap.min.js"></script>	
+			<!-- My Own Script-->
+			<script src="/public/share/navbar/myNavbar.js"></script>
+			<script src="/public/share/footer/myFooter.js"></script>
+		</body>
+	</html>
