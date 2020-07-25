@@ -52,8 +52,10 @@
 					<div class="container border-top-generic">
 						<div class="col-md-10 center justify-content-md-center">
 							<h3 class="about-title mb-30">Text to Speech without Text</h3>
-							<h5 class="mb-30">Team Project @ CSIE5431 Applied Deep Learning</h5>
-							<p class="mb-30">Compare MBV and VQVAE for discrete representations of subword units in the ZeroSpeech 2019 Challenge.</p>
+							<h5 class="mb-30 hide_mobile">Team Project @ CSIE5431 Applied Deep Learning</h5>
+							<h5 class="mb-30 show_mobile" style="text-align: center;">Team Project @ CSIE5431 <br> Applied Deep Learning</h5>
+							<p class="mb-30 hide_mobile">Compare MBV and VQVAE for discrete representations of subword units in the ZeroSpeech 2019 Challenge.</p>
+							<p class="mb-30 show_mobile" style="text-align: center;">Compare MBV and VQVAE <br> for discrete representations of subword units <br> in the ZeroSpeech 2019 Challenge.</p>
 						</div>
 						<div class="row justify-content-md-center">
 							<div class="col-md-10">
@@ -72,7 +74,7 @@
 						<div class="row justify-content-md-center">
 							<div class="col-md-10">
 								<div class="img-text center">
-									<table>
+									<table class="hide_mobile">
 										<tr>
 											<td>Source</td>
 											<td><audio src="/public/pages/project/tts/audio/Source.wav" controls preload></audio></td>
@@ -88,6 +90,32 @@
 										<tr>
 											<td>VQVAEv1</td>
 											<td><audio src="/public/pages/project/tts/audio/VQVAEv1.wav" controls preload></audio></td>
+											<td>VQVAEv2</td>
+											<td><audio src="/public/pages/project/tts/audio/VQVAEv2.wav" controls preload></audio></td>
+										</tr>
+									</table>
+									<table class="show_mobile">
+										<tr>
+											<td>Source</td>
+											<td><audio src="/public/pages/project/tts/audio/Source.wav" controls preload></audio></td>
+										</tr>
+										<tr>
+											<td>Continuous</td>
+											<td><audio src="/public/pages/project/tts/audio/Continous.wav" controls preload></audio></td>
+										</tr>
+										<tr>
+											<td>MBV</td>
+											<td><audio src="/public/pages/project/tts/audio/MBV.wav" controls preload></audio></td>
+										</tr>
+										<tr>
+											<td>MBV-ADV</td>
+											<td><audio src="/public/pages/project/tts/audio/MBVADV.wav" controls preload></audio></td>
+										</tr>
+										<tr>
+											<td>VQVAEv1</td>
+											<td><audio src="/public/pages/project/tts/audio/VQVAEv1.wav" controls preload></audio></td>
+										</tr>
+										<tr>
 											<td>VQVAEv2</td>
 											<td><audio src="/public/pages/project/tts/audio/VQVAEv2.wav" controls preload></audio></td>
 										</tr>

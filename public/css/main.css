@@ -1905,7 +1905,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .collapse.show {
-  background-color: #8c1515;
   padding: 0px 12px;
 }
 
@@ -2489,6 +2488,107 @@ h6 {
   border-radius: 15%;
 }
 
+.hide_mobile {
+  display: block;
+}
+.show_mobile {
+  display: none;
+}
+
+.src {
+  cursor: pointer; position: absolute; top:12.5%; left: 35.5%; color:#006a96 !important;
+}
+
+.src_content {
+  cursor: pointer; position: absolute; top:15.5%; left: 35.5%; color:#960064 !important;
+}
+
+.src_style {
+  cursor: pointer; position: absolute; top:18.5%; left: 35.5%; color:#963c00 !important;
+}
+
+.tar {
+  cursor: pointer; position: absolute; top:12.5%; left: 39%; color:#006a96 !important;
+}
+
+.tar_content {
+  cursor: pointer; position: absolute; top:15.5%; left: 39%; color:#960064 !important;
+}
+
+.tar_style {
+  cursor: pointer; position: absolute; top:18.5%; left: 39%; color:#963c00 !important;
+}
+
+.conv {
+  cursor: pointer; position: absolute; top:12.5%; left: 66%; color:#006a96 !important;
+}
+
+.conv_content {
+  cursor: pointer; position: absolute; top:15.5%; left: 66%; color:#960064 !important;
+}
+
+.conv_style {
+  cursor: pointer; position: absolute; top:18.5%; left: 66%; color:#963c00 !important;
+}
+
+@media (max-width: 767px) {
+  .home-area a {
+    font-size: 4vh;
+  }
+  .home-area img {
+    width: 3.8vh;
+  }
+  .list {
+    margin-bottom: 20px;
+  }
+ .show_mobile {
+   display: block;
+ }
+ .hide_mobile {
+   display: none;
+ }
+ .src {
+   top: 11.5%;
+   left: 28%;
+ }
+ .src_content {
+   top: 13%;
+   left: 28%;
+ }
+ .src_style {
+   top: 14%;
+   left: 28%;
+ }
+ .tar {
+   top:11.5%;
+   left: 38%;
+ }
+ .tar_content {
+   top: 13%;
+   left: 38%;
+ }
+ .tar_style {
+   top: 14%;
+   left: 38%;
+ }
+ .conv {
+   top: 11.5%;
+   left: 69%;
+ }
+ .conv_content {
+   top: 13%;
+   left: 69%;
+ }
+ .conv_style {
+   top:14%;
+   left: 69%;
+ }
+ .navbar-collapse p {
+  padding: 0px 20px
+ }
+}
+
+
 .footer-social a {
   padding-right: 10px;
   padding-left: 10px;
@@ -2683,6 +2783,7 @@ h6 {
   align-items: center;
   justify-content: center;
   margin: auto;
+  padding: 0;
 }
 
 .center-row {

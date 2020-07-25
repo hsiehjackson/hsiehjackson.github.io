@@ -51,9 +51,12 @@
 				<section class="about-generic-area section-gap">
 					<div class="container border-top-generic">
 						<div class="col-md-10 center justify-content-md-center">
-							<h3 class="about-title mb-30">Unsupervised Speech Disentanglement</h3>
-							<h5 class="mb-30">Speech Processing Lab supervised by Prof. Hung-Yi Lee</h5>
-							<p class="mb-30">Implement voice conversion framework with disentanglement analysis.</p>
+							<h3 class="about-title mb-30 hide_mobile">Unsupervised Speech Disentanglement</h3>
+							<h4 class="about-title mb-30 show_mobile">Unsupervised Speech Disentanglement</h4>
+							<h5 class="mb-30 hide_mobile">Speech Processing Lab supervised by Prof. Hung-Yi Lee</h5>
+							<h5 class="mb-30 show_mobile" style="text-align: center;">Speech Processing Lab <br> supervised by Prof. Hung-Yi Lee</h5>
+							<p class="mb-30 hide_mobile" style="text-align: center;">Implement voice conversion framework with disentanglement analysis.</p>
+							<p class="mb-30 show_mobile" style="text-align: center; padding-bottom: 20px;">Implement voice conversion framework with disentanglement analysis.</p>
 						</div>
 						<div class="row justify-content-md-center">
 							<div class="col-md-10">
@@ -64,28 +67,28 @@
 							</div>
 						</div>
 						<audio id="src" src="/public/pages/project/speech/audio/en_wel.wav" preload></audio>
-						<a style="cursor: pointer; position: absolute; top:12.5%; left: 35.5%; color:#006a96" onclick="document.getElementById('src').play()"><i class='fa fa-volume-up fa-2x'></i></a>
+						<a class="src" onclick="document.getElementById('src').play()"><i class='fa fa-volume-up fa-2x'></i></a>
 						<audio id="src_content" src="/public/pages/project/speech/audio/en_wel_zeroStyle.wav" preload></audio>
-						<a style="cursor: pointer; position: absolute; top:15.5%; left: 35.5%; color:#960064" onclick="document.getElementById('src_content').play()"><i class='fa fa-volume-up fa-2x'></i></a>
+						<a class="src_content" onclick="document.getElementById('src_content').play()"><i class='fa fa-volume-up fa-2x'></i></a>
 						<audio id="src_style" src="/public/pages/project/speech/audio/src_zeroContent.wav" preload></audio>
-						<a style="cursor: pointer; position: absolute; top:18.5%; left: 35.5%; color:#963c00" onclick="document.getElementById('src_style').play()"><i class='fa fa-volume-up fa-2x'></i></a>
+						<a class="src_style" onclick="document.getElementById('src_style').play()"><i class='fa fa-volume-up fa-2x'></i></a>
 						<audio id="tar" src="/public/pages/project/speech/audio/tar.wav" preload></audio>
-						<a style="cursor: pointer; position: absolute; top:12.5%; left: 39%; color:#006a96" onclick="document.getElementById('tar').play()"><i class='fa fa-volume-up fa-2x'></i></a>
+						<a class="tar" onclick="document.getElementById('tar').play()"><i class='fa fa-volume-up fa-2x'></i></a>
 						<audio id="tar_content" src="/public/pages/project/speech/audio/tar_zeroStyle.wav" preload></audio>
-						<a style="cursor: pointer; position: absolute; top:15.5%; left: 39%; color:#960064" onclick="document.getElementById('tar_content').play()"><i class='fa fa-volume-up fa-2x'></i></a>
+						<a class="tar_content" onclick="document.getElementById('tar_content').play()"><i class='fa fa-volume-up fa-2x'></i></a>
 						<audio id="tar_style" src="/public/pages/project/speech/audio/tar_zeroContent.wav" preload></audio>
-						<a style="cursor: pointer; position: absolute; top:18.5%; left: 39%; color:#963c00" onclick="document.getElementById('tar_style').play()"><i class='fa fa-volume-up fa-2x'></i></a>
+						<a class="tar_style" onclick="document.getElementById('tar_style').play()"><i class='fa fa-volume-up fa-2x'></i></a>
 						<audio id="s2t" src="/public/pages/project/speech/audio/en_wel_s2t.wav" preload></audio>
-						<a style="cursor: pointer; position: absolute; top:12.5%; left: 66%; color:#006a96" onclick="document.getElementById('s2t').play()"><i class='fa fa-volume-up fa-2x'></i></a>
-						<a style="cursor: pointer; position: absolute; top:15.5%; left: 66%; color:#960064" onclick="document.getElementById('src_content').play()"><i class='fa fa-volume-up fa-2x'></i></a>
-						<a style="cursor: pointer; position: absolute; top:18.5%; left: 66%; color:#963c00" onclick="document.getElementById('tar_style').play()"><i class='fa fa-volume-up fa-2x'></i></a>
+						<a class="conv" onclick="document.getElementById('s2t').play()"><i class='fa fa-volume-up fa-2x'></i></a>
+						<a class="conv_content" onclick="document.getElementById('src_content').play()"><i class='fa fa-volume-up fa-2x'></i></a>
+						<a class="conv_style" onclick="document.getElementById('tar_style').play()"><i class='fa fa-volume-up fa-2x'></i></a>
 						<div class="row justify-content-md-center">
 							<div class="col-lg-10">
 								<p>Recently, voice conversion (VC) without parallel data has
 									been successfully adapted to multi-target scenario. However, such model suffers from the limitation
 									that it can only convert the voice to the speakers in the training
 									data. In this research, we aim to develop speech disentanglement for zero-shot voice conversion. Speech can be disentangled into speaker and content representation with instance normalization (IN) technique which we can extract unique mean and standard deviation value as speaker information. We implemet our VC framework with Variational Autoencoder (VAE) 
-									and our conversion samples are shown above on Figure 1.</p>
+									and conversion samples are shown above on Figure 1.</p>
 							</div>
 						</div>
 

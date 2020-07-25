@@ -7,7 +7,7 @@ document.getElementById("myFooter").innerHTML =
           '<p><a class="mymail" href="/">© Cheng-Ping Hsieh 2020</a></p>'+
         '</div>'+
       '</div>'+
-      '<div class="col-lg-4  col-md-6 col-sm-6">'+
+      '<div class="col-lg-4  col-md-6 col-sm-6 social-widget">'+
         '<div class="single-footer-widget center">'+
           '<h6>Contact</h6>'+
           '<p><a class="mymail" href="mailto:c2hsieh@ucsd.edu"><i class="fa fa-envelope"></i> c2hsieh@ucsd.edu</a></p>'+
