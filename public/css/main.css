@@ -2088,7 +2088,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section-gap {
-  padding: 120px 0;
+  padding: 75px 0;
 }
 
 .section-gap-top {
@@ -2279,7 +2279,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .portfolio-area .filters {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .portfolio-area .filters ul {
@@ -2323,7 +2323,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .portfolio-area .filters-content {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .portfolio-area .filters-content .show {
@@ -2534,6 +2534,8 @@ h6 {
 @media (max-width: 767px) {
   .home-area a {
     font-size: 4vh;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .home-area img {
     width: 3.8vh;
@@ -2547,6 +2549,9 @@ h6 {
  .hide_mobile {
    display: none;
  }
+ .photo {
+  margin-bottom: 40px !important;
+}
  .src {
    top: 11.5%;
    left: 28%;
@@ -2773,10 +2778,13 @@ h6 {
 }
 
 .about-area p {
-  margin-bottom: 15px;
-  margin-top: 15px;
+  margin-bottom: 20px;
+  /* margin-top: 15px; */
 }
 
+.about-area .filters-content {
+  margin-top: 30px;
+}
 .center {
   display: flex;
   flex-direction: column;
